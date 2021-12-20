@@ -1,7 +1,7 @@
+import React from "react";
 import HomesGuestLovesHeader from "./HomesGuestLovesHeader";
 import HomesGuestLovesCards from "./HomesGuestLovesCards";
 import HomesGuestLovesButtons from "./HomesGuestLovesButtons";
-import React from "react";
 
 const Container = (props) => {
     return (

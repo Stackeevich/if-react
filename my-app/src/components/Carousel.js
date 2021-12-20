@@ -1,5 +1,3 @@
-import React from "react";
-
 let position = 0;
 let screenWidth = document.documentElement.clientWidth
 let slidesToShow = (screenWidth < 1024) ? 2 : 4;
