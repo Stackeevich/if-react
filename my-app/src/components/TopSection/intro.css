@@ -1,0 +1,209 @@
+/*Intro block start*/
+.intro{
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 290px;
+}
+.intro-title{
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+    color: #FFFFFF;
+    margin-bottom: 100px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.inputs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+.label{
+    color: #FFFFFF;
+    position: absolute;
+    left: 25px;
+    top: -30px;
+}
+.label-1{
+    transition: all .25s;
+}
+.label-2,
+.label-3{
+    display: none;
+}
+.loupe-icon {
+    display: none;
+}
+.search-form-group{
+    position: relative;
+}
+.dates{
+    display: flex;
+    border: 3px solid #F5BD41;
+    border-radius: 8px;
+    height: 64px;
+}
+.DayPickerInput-Overlay{
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.DayPickerInput input{
+    border: 0;
+    height: 100%;
+    outline: 0;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+.dates input{
+    max-height: 58px;
+}
+.persons{
+    display: flex;
+    height: 64px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.submit-form{
+    background: #3077C6;
+    border-radius: 8px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.submit-form:active,
+.submit-form:hover{
+    background: #044892;
+    transition: .3s;
+}
+.input-form{
+    outline: none;
+    border: none;
+    height: 64px;
+    width: 100%;
+    border-radius: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+.block{
+    margin-top: 20px;
+    position: absolute;
+    width: 260px;
+    background: #fff;
+    border-radius: 8px;
+    top: 50px;
+    z-index: 2;
+}
+#persons{
+    outline: none;
+    border: none;
+    height: 64px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    caret-color: transparent;
+    background-color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.guests_count {
+    display: flex;
+}
+.box{
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    width: 1em;
+    outline: none;
+    border: none;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.choose{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+}
+.btn{
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+    min-width: auto;
+    background-color: #fff;
+    color: #0071c2;
+    border-color: #0071c2;
+    cursor: pointer;
+}
+.disabled-btn{
+    color: #b3b3b3;
+    cursor: not-allowed;
+    border-color: #b3b3b3;
+}
+.child-age{
+    margin-bottom: 10px;
+}
+.child-age-selection {
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+.child-age-span,
+.select-child-age{
+    font-size: 12px;
+    line-height: 14px;
+}
+.select-child-age{
+    outline: none;
+    background: #FFFFFF;
+    border: 1px solid #3077C6;
+    box-sizing: border-box;
+    width: 100px;
+    height: 30px;
+    margin: 5px 5px 0 0;
+    float: left;
+}
+
+.apps-form{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+.apps-link-form{
+    margin-right: 16px;
+}
+.apps-link-form:last-child{
+    margin-right: 0;
+}
+
+/*Intro block end*/
