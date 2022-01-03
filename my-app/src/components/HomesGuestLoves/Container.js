@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import React from 'react';
 import { SwiperSlide } from 'swiper/react';
 import HomesGuestLovesHeader from './HomesGuestLovesHeader';
@@ -10,7 +9,6 @@ import data from '../../constants/content';
 
 const Container = (props) => {
   return (
-    // eslint-disable-next-line react/prop-types,react/destructuring-assignment
     <div className={props.className}>
       <HomesGuestLovesHeader className="homes-block-header" />
       <Carousel

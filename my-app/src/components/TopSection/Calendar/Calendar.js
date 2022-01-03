@@ -1,13 +1,11 @@
-/* eslint-disable prettier/prettier */
 import React, { Component } from 'react';
 import '../intro.css';
 import moment from 'moment';
 import DayPickerInput from 'react-day-picker/DayPickerInput';
 import 'react-day-picker/lib/style.css';
 import { formatDate, parseDate } from 'react-day-picker/moment';
-// eslint-disable-next-line react/prefer-stateless-function
+
 class Calendar extends Component {
-  // eslint-disable-next-line no-useless-constructor
   constructor(props) {
     super(props);
     this.handleFromChange = this.handleFromChange.bind(this);
@@ -18,7 +16,6 @@ class Calendar extends Component {
     };
   }
 
-  // eslint-disable-next-line react/sort-comp
   showFromMonth() {
     const { from, to } = this.state;
     if (!from) {
@@ -43,20 +40,15 @@ class Calendar extends Component {
     return (
       <div className="search-form-group dates col-3 col-md-6 col-sm-6 InputFromTo">
         <DayPickerInput
-          /* eslint-disable-next-line no-undef */
           value={from}
           placeholder="August 20, 2021"
           format="LL"
           formatDate={formatDate}
           parseDate={parseDate}
           dayPickerProps={{
-            // eslint-disable-next-line no-undef
             selectedDays: [from, { from, to }],
-            // eslint-disable-next-line no-undef
             disabledDays: { after: to, before: new Date() },
-            // eslint-disable-next-line no-undef
             toMonth: to,
-            // eslint-disable-next-line no-undef
             modifiers,
             numberOfMonths: 2,
             onDayClick: () => this.to.getInput().focus(),
@@ -64,24 +56,17 @@ class Calendar extends Component {
           onDayChange={this.handleFromChange}
         />
         <DayPickerInput
-          /* eslint-disable-next-line no-return-assign */
           ref={(el) => (this.to = el)}
-          /* eslint-disable-next-line no-undef */
           value={to}
           placeholder="September 16, 2021"
           format="LL"
           formatDate={formatDate}
           parseDate={parseDate}
           dayPickerProps={{
-            // eslint-disable-next-line no-undef
             selectedDays: [from, { from, to }],
-            // eslint-disable-next-line no-undef
             disabledDays: { before: from },
-            // eslint-disable-next-line no-undef
             modifiers,
-            // eslint-disable-next-line no-undef
             month: from,
-            // eslint-disable-next-line no-undef
             fromMonth: from,
             numberOfMonths: 2,
           }}

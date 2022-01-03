@@ -1,10 +1,8 @@
-/* eslint-disable prettier/prettier */
 import React, { useState } from 'react';
 import '../intro.css';
 import PropTypes from 'prop-types';
 import FilterSelect from './FilterSelect';
 
-// eslint-disable-next-line react/prop-types
 const FilterItem = ({ startNumber, endNumber, labelText, select, sendData }) => {
   const [quantity, setQuantity] = useState(startNumber);
   const [selected, setSelected] = useState(false);

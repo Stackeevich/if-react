@@ -1,13 +1,11 @@
-/* eslint-disable prettier/prettier */
 import React from 'react';
 import '../intro.css';
 import PropTypes from 'prop-types';
 
-// eslint-disable-next-line react/prop-types
 const FilterSelect = ({ selected, quantity }) => {
   const ages = [];
 
-  for (let i = 1; i <= 17; i += 1) {
+  for (let i = 0; i <= 17; i += 1) {
     ages.push(i);
   }
 

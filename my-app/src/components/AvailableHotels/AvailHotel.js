@@ -1,23 +1,8 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable react/prop-types */
-/* eslint-disable prettier/prettier */
 import React from 'react';
 
-// eslint-disable-next-line react/prop-types
-const AvailHotel = ({
-  homesListCardClassName,
-  homesListImagesClassName,
-  homesLinkImageClassName,
-  homesListContentClassName,
-  homesListHeadingClassName,
-  homesListTitleClassName,
-  homesListSubtitleClassName,
-  homesListTitleContent,
-  homesListSubtitleContentCity,
-  homesListSubtitleContentCountry,
-  src,
-  alt,
-}) => {
+function AvailHotel({
+  homesListCardClassName, homesListImagesClassName, homesLinkImageClassName, homesListContentClassName, homesListHeadingClassName, homesListTitleClassName, homesListSubtitleClassName, homesListTitleContent, homesListSubtitleContentCity, homesListSubtitleContentCountry, src, alt,
+}) {
   return (
     <div className={homesListCardClassName}>
       <div className={homesListImagesClassName}>
@@ -33,6 +18,6 @@ const AvailHotel = ({
       </div>
     </div>
   );
-};
+}
 
 export default AvailHotel;

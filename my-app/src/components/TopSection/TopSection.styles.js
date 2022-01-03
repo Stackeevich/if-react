@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { css } from '@emotion/react';
 
 export const intro = (theme) => css`

@@ -10,6 +10,9 @@
         "plugin:prettier/recommended",
         "prettier"
     ],
+    "prettier/prettier": ["error", {}, {
+        "usePrettierrc": false
+      }],
     "parser": "babel-eslint",
     "parserOptions": {
         "ecmaFeatures": {

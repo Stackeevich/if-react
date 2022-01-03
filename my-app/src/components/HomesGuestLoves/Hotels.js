@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import React from 'react';
 import data from '../../constants/content';
 import Hotel from './Hotel';

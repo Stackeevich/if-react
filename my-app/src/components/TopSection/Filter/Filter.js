@@ -1,9 +1,7 @@
-/* eslint-disable prettier/prettier */
 import React from 'react';
 import PropTypes from 'prop-types';
 import FilterItem from './FilterItem';
 
-// eslint-disable-next-line react/prop-types
 const Filter = ({ isClicked, sendAdultData, sendRoomsData, sendChildrenData }) => {
   if (isClicked) {
     return (
