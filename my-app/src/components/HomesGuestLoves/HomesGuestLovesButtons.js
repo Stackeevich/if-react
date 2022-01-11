@@ -2,9 +2,9 @@ import React from 'react';
 
 import HomesGuestLovesBtn from './HomesGuestLovesBtn';
 
-const HomesGuestLovesButtons = (props) => {
+const HomesGuestLovesButtons = ({className}) => {
   return (
-    <div className={props.className}>
+    <div className={className}>
       <HomesGuestLovesBtn className="homes-nav-btn" />
     </div>
   );

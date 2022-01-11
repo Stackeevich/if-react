@@ -7,9 +7,9 @@ import '../../style.css';
 import Hotel from './Hotel';
 import data from '../../constants/content';
 
-const Container = (props) => {
+const Container = ({className}) => {
   return (
-    <div className={props.className}>
+    <div className={className}>
       <HomesGuestLovesHeader className="homes-block-header" />
       <Carousel
         slides={data.map((el, index) => (

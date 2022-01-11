@@ -2,9 +2,9 @@ import React from 'react';
 
 import HomesGuestLovesUl from './HomesGuestLovesUl';
 
-const HomesGuestLovesCards = (props) => {
+const HomesGuestLovesCards = ({className}) => {
   return (
-    <div className={props.className}>
+    <div className={className}>
       <HomesGuestLovesUl className="homes-list" />
     </div>
   );

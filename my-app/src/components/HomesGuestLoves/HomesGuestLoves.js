@@ -1,9 +1,9 @@
 import React from 'react';
 import Container from './Container';
 
-const HomesGuestLoves = (props) => {
+const HomesGuestLoves = ({className}) => {
   return (
-    <section className={props.className}>
+    <section className={className}>
       <Container className="container" />
     </section>
   );

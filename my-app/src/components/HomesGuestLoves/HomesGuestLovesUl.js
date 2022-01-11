@@ -2,9 +2,9 @@ import React from 'react';
 
 import Hotels from './Hotels';
 
-const HomesGuestLovesUl = (props) => {
+const HomesGuestLovesUl  = ({className}) => {
   return (
-    <ul className={props.className}>
+    <ul className={className}>
       <Hotels />
     </ul>
   );
