@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useState , useEffect } from 'react';
 import { SwiperSlide } from 'swiper/react';
 import HomesGuestLovesHeader from './HomesGuestLovesHeader';
 import Carousel from './Carousel';
 import 'swiper/swiper-bundle.css';
 import '../../style.css';
 import Hotel from './Hotel';
-import data from '../../constants/content';
 
-const Container = ({className}) => {
+
+function Container({className}) {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("https://fe-student-api.herokuapp.com/api/hotels/popular")
+      .then(response => response.json())
+      .then(data => {
+        setData(data);
+      });
+  }, []);
+
   return (
-    <div className={className}>
+       <div className={className}>
       <HomesGuestLovesHeader className="homes-block-header" />
       <Carousel
         slides={data.map((el, index) => (
