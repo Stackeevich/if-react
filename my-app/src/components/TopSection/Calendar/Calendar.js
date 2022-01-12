@@ -72,29 +72,7 @@ class Calendar extends Component {
           }}
           onDayChange={this.handleToChange}
         />
-        <style>{`
-          .InputFromTo .DayPicker-Day--selected:not(.DayPicker-Day--start):not(.DayPicker-Day--end):not(.DayPicker-Day--outside) {
-          background-color: #f0f8ff;
-          color: #0071c2;
-          }
-          .InputFromTo .DayPicker-Day {
-          border-radius: 0;
-          }
-          .InputFromTo .DayPicker-Day--start {
-          border-top-left-radius: 50%;
-          border-bottom-left-radius: 50%;
-          }
-          .InputFromTo .DayPicker-Day--end {
-          border-top-right-radius: 50%;
-          border-bottom-right-radius: 50%;
-          }
-          .InputFromTo .DayPickerInput-Overlay {
-          width: 550px;
-          }
-          .InputFromTo-to .DayPickerInput-Overlay {
-          margin-left: -198px;
-          }
-        `}</style>
+
       </div>
     );
   }

@@ -120,18 +120,6 @@ class TopSection extends Component {
             <form action="#" className="form" method="post">
               <div className="inputs">
                 <div className="search-form-group destination col-4 col-md-12 col-sm-6">
-                  <svg
-                    className="loupe-icon destination-loupe-icon"
-                    width="16"
-                    height="16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11.4351 10.0629h-.7227l-.2561-.247c.8965-1.0429 1.4362-2.3968 1.4362-3.8696C11.8925 2.662 9.2305 0 5.9462 0 2.6622 0 0 2.662 0 5.9463c0 3.2841 2.662 5.9462 5.9463 5.9462 1.4728 0 2.8267-.5397 3.8696-1.4362l.247.2561v.7227L14.6369 16 16 14.6369l-4.5649-4.574zm-5.4889 0c-2.2778 0-4.1166-1.8388-4.1166-4.1167 0-2.2778 1.8388-4.1166 4.1166-4.1166 2.278 0 4.1167 1.8388 4.1167 4.1166 0 2.278-1.8388 4.1167-4.1167 4.1167z"
-                      fill="#BFBFBF"
-                    />
-                  </svg>
                   <input
                     type="text"
                     id="destination"
