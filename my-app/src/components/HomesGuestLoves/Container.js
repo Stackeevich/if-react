@@ -1,27 +1,27 @@
-import React, { useState , useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from "react-redux";
 import { SwiperSlide } from 'swiper/react';
 import HomesGuestLovesHeader from './HomesGuestLovesHeader';
 import Carousel from './Carousel';
 import 'swiper/swiper-bundle.css';
 import '../../style.css';
 import Hotel from './Hotel';
+import {getPopularHotels} from '../../actionCreator/hotels'
 
 function Container({className}) {
-  const [data, setData] = useState([]);
+
+  const popularHotels = useSelector(state => state.hotels.popular || []);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    fetch("https://fe-student-api.herokuapp.com/api/hotels/popular")
-      .then(response => response.json())
-      .then(data => {
-        setData(data);
-        });
+      dispatch(getPopularHotels())
   }, []);
 
   return (
        <div className={className}>
       <HomesGuestLovesHeader className="homes-block-header" />
       <Carousel
-        slides={data.map((el, index) => (
+        slides={popularHotels.map((el, index) => (
           <SwiperSlide
             key={index.toString()}
             tag="li"
