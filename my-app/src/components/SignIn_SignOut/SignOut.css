@@ -1,0 +1,15 @@
+.sign-out{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+.sign-out-btn{
+    border: none;
+    background-color: transparent;
+    color: #F3F3F4;
+}
+.sign-out-btn:hover,
+.sign-out-btn:active{
+    color: #F5BD41;
+    transition: .3s;
+}
